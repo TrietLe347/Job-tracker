@@ -1,10 +1,10 @@
 Minh Triet Le
 04.16.2025
 
-✅ Progress Summary
+    Progress Summary
 
-🔐 Authentication System
-Created User model with Mongoose
+Authentication System
+    Created User model with Mongoose
 
 Implemented register and login routes using:
     bcrypt for password hashing
@@ -13,13 +13,13 @@ Implemented register and login routes using:
 Built a middleware (requireAuth) to protect routes using JWT
 Successfully tested login/register with Postman and verified tokens via jwt.io
 
-💼 Job Search Integration
-Set up route: GET /api/jobs/search
-Integrated with the JSearch API from RapidAPI
-Passed query and location as URL params (e.g., ?query=intern&location=california)
-Parsed and returned real-time job listings to the frontend (in JSON format)
+Job Search Integration
+    Set up route: GET /api/jobs/search
+    Integrated with the JSearch API from RapidAPI
+    Passed query and location as URL params (e.g., ?query=intern&location=california)
+    Parsed and returned real-time job listings to the frontend (in JSON format)
 
-📦 Job Tracker Backend
+Job Tracker Backend
 Created Job model to store saved job posts per user
 Built protected CRUD routes:
     POST /api/jobs/save → Save a job to MongoDB
@@ -27,27 +27,27 @@ Built protected CRUD routes:
     PUT /api/jobs/:id → Update job status/notes
     DELETE /api/jobs/:id → Remove saved job
 
-🛠️ Technologies & APIs Used
-🔧 Backend Stack
-    Node.js + Express
-    MongoDB Atlas (cloud database)
-    Mongoose (MongoDB ODM)
-    dotenv for secret config
-    Postman for API testing
+Technologies & APIs Used
+    Backend Stack
+        Node.js + Express
+        MongoDB Atlas (cloud database)
+        Mongoose (MongoDB ODM)
+        dotenv for secret config
+        Postman for API testing
 
-🔑 Auth
-bcrypt for secure password hashing
-jsonwebtoken (JWT) for login/session handling
+Auth
+    bcrypt for secure password hashing
+    jsonwebtoken (JWT) for login/session handling
 
-🌐 Job Data API
-JSearch API via RapidAPI
-Endpoint used: https://jsearch.p.rapidapi.com/search
-Required headers: X-RapidAPI-Key, X-RapidAPI-Host
+Job Data API
+    JSearch API via RapidAPI
+    Endpoint used: https://jsearch.p.rapidapi.com/search
+    Required headers: X-RapidAPI-Key, X-RapidAPI-Host
 
 
-🔜 What’s Next?
+What’s Next?
 
-    🎨 Build the React frontend
-    📥 Show job results from GET /api/jobs/search
-    💾 Enable “Save” to call POST /api/jobs/save
-    📋 Build a dashboard for “Saved Jobs”
+    Build the React frontend
+    Show job results from GET /api/jobs/search
+    Enable “Save” to call POST /api/jobs/save
+    Build a dashboard for “Saved Jobs”
